@@ -1,18 +1,18 @@
-// $(document).ready(function(){
-//   $("p").hide();
-//   $("#btn").click(function(){
-//     $("p").toggle();
-//   })
-// })
-// $(document).ready(function(){
-//   $("p").hide();
-// });
+$(document).ready(function(){
+  $("p").hide();
+  $(".flip").click(function(){
+    $(this).closest(".card").find(".card-text").toggle();
+  })
+})
 
-// for (var i = 0; i < buttons.length; i++) {
-//   buttons[i].addEventListener('click', clickButton, false);
-// };
+$(document).ready(function(){
+  $(".delete").click(function(){
+    $(this).closest(".col").remove();
+  })
+});
 
-$("#btn").click( function(){
-  $("#card").hide();
-  console.log("something")
+
+
+$(document).ready(function(){
+  $('.modal').modal();
 });
